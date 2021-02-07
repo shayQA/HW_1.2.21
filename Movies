@@ -1,0 +1,42 @@
+package com.company;
+import java.util.Date;
+
+public class Movie {
+    final String movieName;
+    final Date releaseDate=new Date();
+    float grade;
+    String genre;
+    static int movieCounter=0;
+    static final int ratingForOscar=9;
+
+    public Movie(String movieName, float grade, String genre) {
+        this.movieName = movieName;
+        this.grade = grade;
+        this.genre = genre;
+        ++movieCounter;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "movieName='" + movieName + '\'' +
+                ", releaseDate=" + releaseDate +
+                ", grade=" + grade +
+                ", genre='" + genre + '\'' +
+                ", movieCounter='" + movieCounter + '\'' +
+                '}';
+    }
+
+    static void resetCounter()
+    {
+        movieCounter=0;
+    }
+
+    public boolean isWonOscar()
+    {
+        if(grade>=9)
+            return true;
+        else
+            return false;
+    }
+}
