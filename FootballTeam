@@ -1,0 +1,26 @@
+package com.company;
+
+public class FootballTeam {
+    String name;
+    String country;
+    String [] players=new String[11];
+    int groupRanking;
+    public  void changeRating(int num)
+    {
+        this.groupRanking=num;
+    }
+
+    public  void replacePlayer(String newplayer,String currentplayer){
+        int num=0,i=0;
+        while (i<players.length)
+        {
+            if(players[i].equals(currentplayer))
+            {
+                players[i]=newplayer;
+                break;
+            }
+            i++;
+        }
+    }
+
+}
