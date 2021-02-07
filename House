@@ -1,0 +1,19 @@
+package com.company;
+//import lombok.ToString;
+
+public class House {
+    final String address;
+    final float territory;
+    String OwnerName;
+
+    public House(String address, float territory, String ownerName) {
+        this.address = address;
+        this.territory = territory;
+        this.OwnerName = ownerName;
+    }
+
+    public House(String address, float territory) {
+        this.address = address;
+        this.territory = territory;
+    }
+}
