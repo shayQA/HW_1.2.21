@@ -1,0 +1,142 @@
+package com.company;
+import java.util.Scanner;
+import java.util.Random;
+
+
+public class Main {
+
+    //5
+    public static void PrintDog()
+    {
+        Dog d1=new Dog();
+        d1.name="laki";
+        d1.age=19;
+        d1.breed="lavredor";
+        System.out.println(d1);
+    }
+
+    //9
+    public static void creatMeals()
+    {
+        Meal m1=new Meal("pizza",true,1.2f);
+        Meal m2=new Meal("hotdog",false,1.5f);
+        System.out.println(m1.toString());
+    }
+
+    //12
+    public static void createHouses(){
+        House h1=new House("BeerSheva",99.3f,"Moshe");
+        House h2=new House("BeerSheva",99.3f);
+    }
+
+    //17
+    public static void myBanks()
+    {
+        BankAccount [] ba=new BankAccount[3];
+        BankAccount a1= new BankAccount("Nimrod", 100,90,true);
+        BankAccount a2= new BankAccount("Ben", -200,5,false);
+        BankAccount a3= new BankAccount("Moshe", 1000,8,true);
+        ba[0]=a1;
+        ba[1]=a2;
+        ba[2]=a3;
+
+        int temp=0,max=0;
+        for(int i=0;i<3;i++)
+        {
+            ba[i].checkBalance();
+            if(ba[i].creditScore>max)
+            {
+                max = ba[i].creditScore;
+                temp=i;
+            }
+        }
+        ba[temp].deposit(1000);
+        System.out.println(ba[temp]);
+    }
+
+    public static void main(String[] args) {
+   Scanner s=new Scanner(System.in);
+        Scanner s1=new Scanner(System.in);
+
+        /*
+        // 1
+        // זהו אוסף של משתנים, מאפיינים ופונקציות המאוגדים למבנה לוגי אחד ופועלים יחד. מחלקות עוזרות לנו לשמור על תכונות שוות בין כול האובייקטים וגם מקל על שינויים בתוכנה.
+
+        // 2
+        // זה בעצם אובייקט והוא מקום בזיכרון המחשב שיש לו ערך וקיים אליו קישור ממזהה כלשהו. אובייקט יכול להיות משתנה, פונקציה, או מבנה נתונים.
+
+        //3
+        // Songs song1=new Songs(משתנים שדרושים בבנאי);
+
+        //4+5
+        Dog dogi= new Dog();
+        dogi.name="booch";
+        dogi.bark();
+
+        //6
+        // שיטה זו נקראת כאשר מתבקשים להדפיס אובייקט. כדי לכלול, זה מאפשר לך לציין את מה להדפיס כאשר האובייקט נקרא.
+        //בשונה מכל סוג אחר של שיטה, שיטה זו היא משתמע, ואין צורך להוסיף .toString () בקצה האובייקט.
+
+        //7
+        PrintDog();
+
+        //8
+         FootballTeam t1=new FootballTeam();
+         int i=0;
+         System.out.println("Enter 11 player: ");
+         for(i=0;i<t1.players.length;i++) {
+         t1.players[i] =s.nextLine();
+         System.out.println(i);
+         }
+        t1.replacePlayer("moshe","messi");
+
+        //9+10
+        creatMeals();
+
+        //11
+        // המשמעות של final היא תמיד זהה: לישות המוגדרת תתבצע השמה אחת לכל היותר. מכיון שאפשר לבצע לישות כזו השמה אחת בלבד, ההשמה הזו היא גם ההשמה הסופית, ומכאן המילה final.
+        // משתנה סטטי הוא משתנה המוקצה באופן חד פעמי למחלקה ולא לכל מופע של מחלקה שנוצר בניגוד למשתנה פנימי של מחלקה המוקצה לכל אובייקט ואובייקט מסוג המחלקה.
+
+        //12
+        createHouses();
+
+        //13
+        Weather w1=new Weather(20.2f,25,true,21);
+        w1.changeChanceOfRain(25);
+        System.out.println(w1);
+        w1.printTempFahrenheit();
+
+        //14
+        Movie m1=new Movie("The ring",1.2f,"Horror");
+        System.out.println(m1);
+        Movie.resetCounter();
+        Movie m2=new Movie("Click",4.2f,"Comedy");
+        System.out.println(m2);
+        System.out.println(m2.isWonOscar());
+
+        //15
+               Memory.intNumber=2;
+        Memory.floatNumber=2.2f;
+        Memory.str="irena";
+        System.out.println("Please enter int number: ");
+        Memory.add(s.nextInt());
+        System.out.println("Please enter float number: ");
+        Memory.add(s.nextFloat());
+        System.out.println("Please enter string: ");
+        Memory.add(s1.nextLine());
+
+        //16
+        BankAccount account1= new BankAccount("Moshe",-50001,3,false);
+        account1.checkBalance();
+        account1.withdraw(100);
+        account1.deposit(50);
+        System.out.println(account1);
+
+        //17
+        myBanks();
+        */
+        
+
+    }
+
+}
