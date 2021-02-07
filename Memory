@@ -1,0 +1,22 @@
+package com.company;
+
+public class Memory {
+    static int intNumber;
+    static float floatNumber;
+    static String str;
+
+    static void add(int num)
+    {
+        System.out.println(intNumber+=num);
+    }
+
+    static void add(float num)
+    {
+        System.out.println(floatNumber+=num);
+    }
+    static void add(String str1)
+    {
+        System.out.println(str+=str1);
+    }
+
+}
