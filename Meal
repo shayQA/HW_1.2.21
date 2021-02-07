@@ -1,0 +1,26 @@
+package com.company;
+//import lombok.AllArgsConstructor;
+//import lombok.ToString;
+
+public class Meal {
+//@AllArgsConstructor;
+    //@ToString
+    String name;
+    boolean vegan;
+    float price;
+
+    public Meal(String name, Boolean vegan, float price) {
+        this.name = name;
+        this.vegan = vegan;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Meal{" +
+                "name='" + name + '\'' +
+                ", vegan=" + vegan +
+                ", price=" + price +
+                '}';
+    }
+}
