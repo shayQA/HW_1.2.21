@@ -1,0 +1,20 @@
+package com.company;
+
+public class Dog {
+    String name;
+    int age;
+    String breed;
+     public void bark ()
+     {
+         System.out.println("woof woof "+ this.name);
+     }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", breed='" + breed + '\'' +
+                '}';
+    }
+}
